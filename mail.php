@@ -6,10 +6,10 @@ $pesan = $_POST['pesan'];
 $ke = "fitrailyasa12@gmail.com";
 $subjek = "Pesan dari Website";
 $teks = "Nama = " . $nama . "\r\n  Email = " . $email . "\r\n Pesan =" . $pesan;
-$header = "From: fitrailyasa.github.io" . "\r\n" .
+$headers = "From: noreply@yoursite.com" . "\r\n" .
     "CC: somebodyelse@example.com";
 if ($email != NULL) {
-    mail($ke, $subjek, $teks, $header);
+    mail($ke, $subjek, $teks, $headers);
 }
 //mengalihkan
 header("Location:index.html");
