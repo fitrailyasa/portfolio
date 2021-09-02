@@ -275,6 +275,8 @@ img {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 }
 .skills__icon {
+  width: 40px;
+  height: 40px;
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: var(--first-color);
