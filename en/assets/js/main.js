@@ -11,6 +11,17 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
+/* DARK MODE */
+var icon = document.getElementById("icon");
+icon.onclick = function(){
+    document.body.classList.toggle("darkmode");
+    if(document.body.classList.contains("darkmode")){
+        icon.src = "ico/darkmode.png";
+    } else {
+        icon.src = "ico/lightmode.png";
+    }
+}
+
 /*===== ACTIVE & DEACTIVE MENU =====*/
 const navLink = document.querySelectorAll('.nav__link');   
 
