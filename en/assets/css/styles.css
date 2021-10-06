@@ -158,7 +158,7 @@ img {
 }
 .nav__link {
   position: relative;
-  color: var(--first-color);
+  color: var(--third-color);
 }
 .nav__link:hover {
   position: relative;
