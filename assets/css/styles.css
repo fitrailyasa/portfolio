@@ -9,15 +9,15 @@
 /*===== Warna =====*/
 :root {
   --first-color: #dc143c;
-  --second-color: #808080;
-  --third-color: #ffffff;
-  --fourth-color: #999999;
-}
-.darkmode {
-  --first-color: #dc143c;
   --second-color: #eaeaea;
   --third-color: #101010;
   --fourth-color: #bbbbbb;
+}
+.lightmode {
+  --first-color: #dc143c;
+  --second-color: #808080;
+  --third-color: #ffffff;
+  --fourth-color: #999999;
 }
 
 /*===== Font Tipografi =====*/
