@@ -62,6 +62,9 @@
 html {
   scroll-behavior: smooth;
 }
+a{
+  color: white;
+}
 body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
