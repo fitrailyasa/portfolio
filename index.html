@@ -1,249 +1,892 @@
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="application-name" content="&nbsp;"/>
-		<meta name="msapplication-TileColor" content="#FFFFFF" />
-		<meta name="msapplication-TileImage" content="ico/mstile-144x144.png" />
-		<meta name="msapplication-square70x70logo" content="ico/mstile-70x70.png" />
-		<meta name="msapplication-square150x150logo" content="ico/mstile-150x150.png" />
-		<meta name="msapplication-wide310x150logo" content="ico/mstile-310x150.png" />
-		<meta name="msapplication-square310x310logo" content="ico/mstile-310x310.png" />
-        <meta name="theme-color" content="crimson" />
-        <meta name="description" content="Portfolio Fitra Ilyasa" />
-        <meta name="keywords" content="Portfolio, Fitra, Ilyasa, Fitra Ilyasa" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="author" content="Fitra Ilyasa" />
-        <meta name="copyright" content="Fitra ilyasa" />
-        <meta name="robots" content="follow" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Portfolio Fitra Ilyasa" />
-        <meta property="og:url" content="https://fitrailyasa.github.io/portfolio" />
-        <meta property="og:description" content="Portfolio Fitra Ilyasa" />
-        <meta property="og:site_name" content="Portfolio Fitra Ilyasa" />
-        <meta property="og:image:secure_url" itemprop="image" content="#" />
-        <meta property="og:image" itemprop="image" content="#" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="337" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@fitrailyasa" />
-		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="ico/apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144x144.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="ico/apple-touch-icon-60x60.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="ico/apple-touch-icon-120x120.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="ico/apple-touch-icon-76x76.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="ico/apple-touch-icon-152x152.png" />
-		<link rel="icon" type="image/png" href="ico/favicon-196x196.png" sizes="196x196" />
-		<link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16" />
-		<link rel="icon" type="image/png" href="ico/favicon-128.png" sizes="128x128" />
-        <link rel="manifest" href="./manifest.webmanifest" />
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+  <head>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./assets/ico/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/ico/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/ico/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/ico/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/ico/mstile-310x310.png" />
+    <meta name="theme-color" content="crimson" />
+    <meta name="description" content="Portfolio Fitra Ilyasa" />
+    <meta name="keywords" content="Portfolio, Fitra, Ilyasa, Fitra Ilyasa" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="author" content="Fitra Ilyasa" />
+    <meta name="copyright" content="Fitra ilyasa" />
+    <meta name="robots" content="follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio Fitra Ilyasa" />
+    <meta property="og:url" content="https://fitrailyasa.github.io/portfolio" />
+    <meta property="og:description" content="Portfolio Fitra Ilyasa" />
+    <meta property="og:site_name" content="Portfolio Fitra Ilyasa" />
+    <meta property="og:image:secure_url" itemprop="image" content="#" />
+    <meta property="og:image" itemprop="image" content="#" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="337" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@fitrailyasa" />
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    	<link href='https://fontawesome.com/v5.15/icons' rel='stylesheet'>
-	
+    <!--Favicon-->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/ico/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/ico/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/ico/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/ico/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/ico/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/ico/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/ico/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/ico/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./assets/ico/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./assets/ico/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./assets/ico/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/ico/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./assets/ico/favicon-128.png" sizes="128x128" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-        <title>Fitra Ilyasa</title>
-    </head>
-    <body>
-        <!--===== BAGIAN ATAS (KEPALA) =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo"><img src="ico/apple-touch-icon-60x60.png" alt="logo"></a>
+    <!--Title-->
+    <title>Fitra Ilyasa</title>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6b0af4bcb3.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/profile.jpg" alt="Richard hanrick" width="80" style="border-radius: 10px;">
+          </figure>
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Fitra Ilyasa</h1>
+            <p class="title">Web developer</p>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:fitrailyasa12@gmail.com" class="contact-link">fitrailyasa12@gmail.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="https://wa.me/+6282217988178" class="contact-link">+62 822 1798 8178</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Garut, West Java, Indonesia</address>
+              </div>
+            </li>
+          </ul>
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://facebook.com/fitrailyasa12" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://twitter.com/fitrailyasa" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://instagram.com/fitrailyasa" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link  active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <article class="about  active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+          <section class="about-text">
+            <p>
+              Usually called Fitra, I am a student at the Institut Teknologi Sumatera (ITERA). I majored in Informatics
+              Engineering
+              and now I focus on Web Development with more than 5 years of experience.
+            </p>
+            <p>
+              I am skilled in React JS and Laravel,
+              Experienced with Git and Github, Ability to test, debug, and troubleshoot using browser console and
+              external tools, and
+              Enjoy problem solving with a growth learning attitude, Self-driven with good time management skills.
+            </p>
+          </section>
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
                 </div>
-                <div><img src="ico/lightmode.png" id="icon" alt="icon"></div>
-                <div><a href="https://fitrailyasa.github.io/portfolio/en"><img src="ico/world.png" alt="bahasa"></a></div>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#about" class="nav__link">Tentang</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Keahlian</a></li>
-                        <li class="nav__item"><a href="#project" class="nav__link">Projek</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Kontak</a></li>
-                    </ul>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a professional level.
+                  </p>
                 </div>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
                 </div>
-            </nav>
-        </header>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
+                  <p class="service-item-text">
+                    Professional development of applications for Android.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-cube.png" alt="camera icon" width="40">
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Rubik Cube</h4>
+                  <p class="service-item-text">
+                    I solving cube of any category at a middle level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-        <main class="l-main">
-            <!--===== MENU UTAMA =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title"><span class="home__title-color">Fitra Ilyasa</span><br>Desainer dan<br>Pengembang Web</h1>
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                  </figure>
 
-                    <a href="https://wa.me/6285314294055" class="button">Kontak</a>
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were very pleased with the work done. She has
+                      a
+                      lot of experience
+                      and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing
+                      elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                  </figure>
+
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were very pleased with the work done. She has
+                      a
+                      lot of experience
+                      and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing
+                      elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                  </figure>
+
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were very pleased with the work done. She has
+                      a
+                      lot of experience
+                      and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing
+                      elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+
+                  <figure class="testimonials-avatar-box">
+                    <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                  </figure>
+
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were very pleased with the work done. She has
+                      a
+                      lot of experience
+                      and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing
+                      elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </section>
+
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon">
+              </div>
+
+              <div class="modal-content">
+
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
                 </div>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/fitrailyasa/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/fitrailyasa" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+              </div>
 
-                <div class="home__img">    
-                    <img src="assets/img/profile.png" alt="">
-                </div>
             </section>
 
-            <!--===== TENTANG =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">Tentang</h2>
+          </div>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">Fitra Ilyasa</h2>
-                        <p class="about__text">Biasa dipanggil Fitra, saya mahasiswa Institut Teknologi Sumatera (ITERA). Saya mengambil jurusan Teknik Informatika dan sekarang saya fokus pada Pengembangan Web dengan pengalaman lebih dari 5 tahun.</p>           
-                    </div>                                   
-                </div>
-            </section>
 
-            <!--===== KEAHLIAN =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Keahlian</h2>
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <p class="skills__text">Frontend (Web Developer):</p>
-                        <a href="https://www.freecodecamp.org/certification/fitrailyasa/javascript-algorithms-and-data-structures" target="_blank">
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                        <img src="assets/img/Logo_JS.png" alt="logo" class="skills__icon">
-                                    <span class="skills__name">JAVASCRIPT</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="https://www.freecodecamp.org/certification/fitrailyasa/front-end-development-libraries" target="_blank">
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                        <img src="assets/img/Logo_React.png" alt="logo" class="skills__icon">
-                                    <span class="skills__name">REACT JS</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div>
-                        <p class="skills__text">Backend (Web Developer):</p>
-                        <a href="https://www.sololearn.com/Certificate/1059-16468120/jpg" target="_blank">
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <img src="assets/img/Logo_PHP.png" alt="logo" class="skills__icon">
-                                    <span class="skills__name">PHP</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" target="_blank">
-                            <div class="skills__data">
-                                <div class="skills__names">
-                                    <img src="assets/img/Logo_Laravel.png" alt="logo" class="skills__icon">
-                                    <span class="skills__name">LARAVEL</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </section>
+          <!--
+          - clients
+        -->
 
-            <!--===== PROJEK =====-->
-            <section class="project section" id="project">
-                <h2 class="section-title">Projek</h2>
-                <div class="project__subtitle">
-                    <h3 class="project__text">Projek Pribadi</h3>
-                </div>
-                <div class="project__container bd-grid">
-                    <div class="project__img">
-                        <p>Game Web "Oray-orayan"</p>
-                        <a href="https://fitrailyasa.github.io/oray-orayan"><img src="assets/img/project1.jpg" alt=""></a>
-                    </div>
-                    <div class="project__img">
-                        <p>Tools "Kode QR Generator"</p>
-                        <a href="https://fitrailyasa.github.io/qr-generator"><img src="assets/img/project2.jpg" alt=""></a>
-                    </div>
-                    <div class="project__img">
-                        <p>Aplikasi "ChatTra"</p>
-                        <a href="http://chattra.herokuapp.com"><img src="assets/img/project3.jpg" alt=""></a>
-                    </div>
-                    <div class="project__img">
-                        <p>Tools "Dicobot Nulis"</p>
-                        <a href="https://fitrailyasa.github.io/dicobot-nulis"><img src="assets/img/project4.jpg" alt=""></a>
-                    </div>
-                    <div class="project__img">
-                        <p>Desain Web Edukasi "Nyiar Elmu"</p>
-                        <a href="https://fitrailyasa.github.io/nyiar-elmu"><img src="assets/img/project5.jpg" alt=""></a>
-                    </div>
-                </div>
-                <br><br>
-                <div class="project__subtitle">
-                    <h3 class="project__text">Projek Tim</h3>
-                </div>
-				<div class="project__container bd-grid">
-                    <div class="project__img">
-                        <p>Backend "ICoSITeR 2021"</p>
-                        <a href="https://icositer2021.com"><img src="assets/img/team_project1.jpg" alt=""></a>
-                    </div>
-                    <div class="project__img">
-                        <p>Backend "PPLK 2022"</p>
-                        <a href="https://pplk2022.com"><img src="assets/img/team_project2.jpg" alt=""></a>
-                    </div>
-                    <div class="project__img">
-                        <p>Tech Lead "ITERA Adventure 2"</p>
-                        <a href="https://ardhames.itch.io/itera-adventure-2"><img src="assets/img/team_project3.jpg" alt=""></a>
-                    </div>
-                    <div class="project__img">
-                        <p>FullStack "Get Read It" (On Progress)</p>
-                        <img src="assets/img/team_project5.jpg" alt="">
-                    </div>
-                    <div class="project__img">
-                        <p>Coming Soon</p>
-                        <img src="assets/img/comingsoon.jpg" alt="">
-                    </div>
-                </div>
-            </section>
+          <section class="clients">
 
-            <!--===== KONTAK =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Kontak</h2>
+            <h3 class="h3 clients-title">Clients</h3>
 
-                <div class="contact__container bd-grid">
-                    <form action="mail.php" class="contact__form" method="POST">
-                        <input type="text" name="nama" placeholder="Nama" class="contact__input">
-                        <input type="mail" name="email" placeholder="Email" class="contact__input">
-                        <textarea name="pesan" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Kirim" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
+            <ul class="clients-list has-scrollbar">
 
-        <!--===== BAGIAN BAWAH (KAKI) =====-->
-        <footer class="footer">
-            <p class="footer__title">Fitra Ilyasa</p>
-            <div class="footer__social">
-                <a href="https://facebook.com/fitrailyasa12" target="_blank" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-	        	<a href="https://instagram.com/fitrailyasa" target="_blank" class="footer__icon"><i class='bx bxl-instagram' ></i></a>             
-		        <a href="https://twitter.com/fitrailyasa" target="_blank" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-		        <a href="https://youtube.com/c/fitrailyasa" target="_blank"class="footer__icon"><i class='bx bxl-youtube' ></i></a>  
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-1-color.png" alt="client logo">
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-2-color.png" alt="client logo">
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-3-color.png" alt="client logo">
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-4-color.png" alt="client logo">
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-5-color.png" alt="client logo">
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-6-color.png" alt="client logo">
+                </a>
+              </li>
+
+            </ul>
+
+          </section>
+
+        </article>
+
+        <article class="resume" data-page="resume">
+
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
             </div>
-            <p>&#169; 2022 || Fitra Ilyasa</p>
-        </footer>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Sumatra Institute of Technology (ITERA)</h4>
+                <span>2020 — Now</span>
+                <p class="timeline-text">
+                  Informatics Engineering
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Senior High School 7 Garut</h4>
+                <span>2017 — 2020</span>
+                <p class="timeline-text">
+                  Math and Science
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Creative director</h4>
+
+                <span>2015 — Present</span>
+
+                <p class="timeline-text">
+                  Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                  qvuas
+                  molestias
+                  exceptur.
+                </p>
+
+              </li>
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Art director</h4>
+
+                <span>2013 — 2015</span>
+
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                  quas molestias
+                  exceptur.
+                </p>
+
+              </li>
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Web designer</h4>
+
+                <span>2010 — 2013</span>
+
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                  quas molestias
+                  exceptur.
+                </p>
+
+              </li>
+
+            </ol>
+
+          </section>
+
+          <section class="skill">
+
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Web design</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Graphic design</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Branding</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">WordPress</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%;"></div>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </section>
+
+        </article>
 
 
-        <!--===== ANIMASI BERGESER =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== JAVASCRIPT =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>Select category</div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+            <ul class="project-list">
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project1.jpg" alt="finance" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project2.jpg" alt="orizon" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Orizon</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <li class="project-item  active" data-filter-item data-category="web design">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project3.jpg" alt="fundo" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Fundo</h3>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+              <li class="project-item  active" data-filter-item data-category="applications">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project4.jpg" alt="brawlhalla" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Brawlhalla</h3>
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+              <li class="project-item  active" data-filter-item data-category="web design">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/project5.jpg" alt="dsm." loading="lazy">
+                  </figure>
+                  <h3 class="project-title">DSM.</h3>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+              <li class="project-item  active" data-filter-item data-category="web design">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/team_project1.jpg" alt="metaspark" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">MetaSpark</h3>
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/team_project2.jpg" alt="summary" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Summary</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <li class="project-item  active" data-filter-item data-category="applications">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/team_project3.jpg" alt="task manager" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Task Manager</h3>
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/team_project5.jpg" alt="arrival" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Arrival</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis
+                      suscipit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15832.63865171836!2d107.5515087!3d-7.4479583!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6627e2a610ab6b%3A0xcf4b50cf12e408e!2sRumah%20Fitra%20Ilyasa!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="400" height="300" loading="lazy"></iframe>
+            </figure>
+          </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+            <form action="mailto:fitrailyasa12@gmail.com" class="form" data-form>
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required
+                  data-form-input>
+              </div>
+              <textarea name="message" class="form-input" placeholder="Your Message" required
+                data-form-input></textarea>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--Scripts-->
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+
 </html>
